@@ -1,0 +1,126 @@
+html {
+  min-height: 100%;
+  -webkit-tap-highlight-color: rgba(255, 148, 184, 0.5);
+}
+body {
+  margin: 0;
+  min-height: 100%;
+  width: 99%;
+  padding-top: 0px;
+  background: #fafafa;
+}
+/* navigation bar */
+#navBar {
+  position: fixed;
+  top: -20px;
+  left: 0px;
+  right: 0px;
+  width: 98%;
+  z-index: 900;
+  list-style: none;
+  align-content: right;
+  background-color: #90D3A5;
+  color: white;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  padding-left: 40px;
+  padding-right: 40px;
+  text-align: right;
+  font-family: 'Quicksand', sans-serif;
+  font-size: 100%;
+}
+#navBar a {
+  color: #ffda00;
+}
+#navBar ul {
+  padding-right: -100px;
+}
+#navBar li {
+  color: white;
+  display: inline;
+  padding-right: 80px;
+  text-transform: uppercase;
+}
+#navBar li > div.active {
+  display: inline;
+  border-bottom: 2px solid white;
+}
+img.logo {
+  float: left;
+  height: 45px;
+  width: 45px;
+}
+img.header {
+  float: left;
+  width: 100%;
+}
+#navBar a.menulink:hover {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  color: #000000 !important;
+  -webkit-animation-name: example;
+  /* Chrome, Safari, Opera */
+  -webkit-animation-duration: 0.1s;
+  /* Chrome, Safari, Opera */
+  animation-name: example ;
+  animation-duration: 0.1s;
+}
+#navBar a.menulink:active {
+  color: white;
+}
+#navBar .smartphone {
+  display: none;
+}
+a.menulink:link {
+  text-decoration: none;
+}
+a.menulink:visited {
+  color: white;
+}
+.wrapper {
+  z-index: 999;
+  position: fixed;
+  padding-left: 25px;
+  padding-top: 20px;
+  width: 45px;
+}
+/* main div elements */
+.mainContent {
+  color: black;
+  width: 65%;
+  bottom: 0px;
+  margin: 0 auto;
+  min-height: 100% !important;
+  padding-top: 100px;
+  text-align: justify;
+  font-size: 100%;
+  font-family: 'Quicksand', sans-serif;
+}
+/* styling input fields */
+input[type=text],
+select {
+  width: 25%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  color: white;
+  background-color: #90D3A5;
+}
+input[type=submit] {
+  width: 20%;
+  background-color: #82BC92;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  text-align: center;
+  font-family: 'Quicksand', sans-serif;
+}
+input[type=submit]:hover {
+  background-color: #658E6D;
+}
