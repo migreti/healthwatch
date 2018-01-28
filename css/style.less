@@ -1,6 +1,7 @@
 @light_green: #90D3A5;
 @dark_green: #82BC92;
 @green_hover: #658E6D;
+@white: #FFFFFF;
 
 html {
   min-height: 100%;
@@ -38,7 +39,8 @@ body {
 }
 
 #navBar a {
-  color: #ffda00;
+  color: @white;
+  font-weight: 700;
 }
 
 #navBar ul {
@@ -116,6 +118,23 @@ a.menulink:visited {
   font-family: 'Quicksand', sans-serif;
 }
 
+.gallery {
+  width: 65%;
+  bottom: 0px;
+  margin:0 auto;
+  min-height: 100% !important;
+  padding-top: 300px;
+  text-align: justify;
+  font-size: 100%;
+  font-family: 'Quicksand', sans-serif;
+}
+
+.profileHeader {
+  width: 100%
+  background-color: @light_green;
+  position: relative;
+}
+
 /* styling input fields */
 
 input[type=text], select {
@@ -145,4 +164,63 @@ input[type=submit] {
 
 input[type=submit]:hover {
     background-color: @green_hover;
+}
+
+input[type=textarea], select {
+    width: 50%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    color: white;
+    background: @light_green;
+}
+
+.profilepic {
+  width: 100px;
+  height: 100px;
+}
+
+/* Gallery */
+
+.thumbnail {
+  display: inline-block;
+  text-align: center;
+  position: relative;
+  width: 280px;
+  height: 280px;
+  overflow: hidden;
+  margin: -2px -2px -2px -2px;
+}
+.thumbnail img {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  height: 100%;
+  width: auto;
+  overflow: hidden;
+  -webkit-transform: translate(-50%,-50%);
+  -ms-transform: translate(-50%,-50%);
+  transform: translate(-50%,-50%);
+}
+
+.thumbnail img.portrait {
+  width: 100%;
+  height: auto;
+}
+
+.thumbnail .text {
+  width: 280px;
+  position:relative;
+  bottom:-100px;
+  left:0px;
+  background-color: rgba(0, 0, 0, 0.7);
+  visibility:hidden;
+  color: white;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 200%;
+  align-content: center;
+  padding: 0px;
+  text-align: center;
 }
