@@ -108,9 +108,9 @@ a.menulink:visited {
 
 .mainContent {
   color: black;
-  width: 65%;
   bottom: 0px;
-  margin:0 auto;
+  width: 50%;
+  margin: 0 auto;
   min-height: 100% !important;
   padding-top: 100px;
   text-align: justify;
@@ -131,8 +131,6 @@ a.menulink:visited {
 
 .profileHeader {
   width: 100%
-  background-color: @light_green;
-  position: relative;
 }
 
 /* styling input fields */
@@ -166,15 +164,21 @@ input[type=submit]:hover {
     background-color: @green_hover;
 }
 
-input[type=textarea], select {
-    width: 50%;
-    padding: 12px 20px;
-    margin: 8px 0;
-    display: inline-block;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    color: white;
-    background: @light_green;
+[type=submit].circular {
+  width: 40px;
+}
+
+[type=text],
+select,
+textarea {
+  width: 50%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  color: white;
+  background: @light_green;
 }
 
 .profilepic {
