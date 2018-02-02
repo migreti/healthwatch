@@ -11,8 +11,8 @@ var db = mongoose.connection;
 //app.use(express.static(__dirname+'/client'));
 //app.use(bodyParser.json());
 
-app.get('/', function(req, res) {
-  res.send('hello world');
+app.get('/client/views/registration.html', function(req, res) {
+  res.send('');
 })
 
 app.listen(3000);
