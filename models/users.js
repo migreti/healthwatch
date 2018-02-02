@@ -27,3 +27,11 @@ var usersSchema = mongoose.Schema({
     default: Date.now
   }
 });
+
+var Users = module.exports = mongoose.model('Users', usersSchema);
+
+//get users
+
+module.exports.getUsers = function(callback, limit) {
+  Users.find(callback).limit(limit);
+}
