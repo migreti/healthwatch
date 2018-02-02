@@ -3,16 +3,20 @@ const app = express();
 const bodyParser = require('body-parser');
 const mongoose = require('mongoose');
 
+Users = require('./models/users');
+
 //connect to mongoose
 
 mongoose.connect('mongodb://localhost/healthwatch');
 var db = mongoose.connection;
 
-//app.use(express.static(__dirname+'/client'));
-//app.use(bodyParser.json());
-
-app.get('/client/views/registration.html', function(req, res) {
-  res.send('');
+app.get('/', function(req, res) {
+  Users.getUsers(function(err, users){
+    if(err) {
+      throw err;
+    }
+    res.json(users);
+  })
 })
 
 app.listen(3000);
